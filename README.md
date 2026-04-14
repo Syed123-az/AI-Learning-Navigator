@@ -19,7 +19,7 @@ It analyzes student data such as study time, attendance, and test preparation to
 👥 Team Members
 
 - Syed Azmath
-- Mohd Afnan S
+- Mohammed Afnan S
 
 --------------------------------------------------
 

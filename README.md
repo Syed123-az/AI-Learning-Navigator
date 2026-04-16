@@ -1,126 +1,82 @@
 AI Learning Navigator - Student Performance Analysis System
 
---------------------------------------------------
+📌 Project Overview
 
-📌 Project Description
+This project is an AI-driven system designed to analyze student performance and provide personalized learning recommendations.
 
-AI Learning Navigator is a data-driven system designed to analyze student performance and provide personalized learning recommendations.
+The system uses data analysis, machine learning (K-Means clustering), and rule-based AI logic to identify performance levels, detect skill gaps, and generate personalized learning paths and actionable insights.
 
-The system uses machine learning, clustering, and rule-based logic to:
-- Segment students into performance groups
-- Identify skill gaps
-- Generate personalized learning paths
-- Suggest career alignment
-- Provide actionable improvement plans
-
---------------------------------------------------
+An interactive dashboard is developed using Streamlit to visualize data and support real-time decision-making.
 
 👥 Team Members
 
-- Syed Azmath
-- Mohammed Afnan S
-
---------------------------------------------------
-
-⚙️ Technologies Used
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn (KMeans Clustering)
-- Streamlit (Dashboard)
-- Jupyter Notebook (EDA)
-
---------------------------------------------------
+Syed Azmath
+Mohammed Afnan S
 
 📂 Project Files
 
-- eda.ipynb → Exploratory Data Analysis (EDA) with visual insights
-- learning_navigator.py → Core logic and analysis system
-- dashboard.py → Interactive Streamlit dashboard
-- student_learning_dataset.xlsx → Dataset
-- learning_navigator_report.pdf → Project report
-- README.md → Documentation
-- README.md → Project documentation
+learning_navigator_report.pdf
+→ Final project report containing methodology, analysis, and conclusions
+dashboard.py
+→ Streamlit-based interactive dashboard with AI recommendations and visualizations
+eda.ipynb
+→ Exploratory Data Analysis notebook for understanding data patterns and relationships
+README.md
+→ Project documentation and execution guide
+student_learning_dataset.xlsx
+→ Dataset used for analysis and model building
 
---------------------------------------------------
+📊 Key Features
 
-📊 EDA (Exploratory Data Analysis)
+Student performance segmentation using K-Means clustering
+(Low Performer, Average (At Risk), High Performer)
+Skill gap identification
+(Weak Fundamentals, Needs Improvement, Strong)
+AI-based recommendation system
+Cohort-level insights
+Student-level suggestions
+Personalized learning path guidance
+Interactive dashboard with filters:
+Performance level
+Score range
+Absences
+Data visualizations:
+Performance distribution (Pie chart)
+Category breakdown (Bar chart)
+Scatter plots (Study time vs performance, Absences vs performance)
+Skill gap analysis
+Identification of top-performing and at-risk students
 
-The EDA notebook (`eda.ipynb`) is used to understand data patterns and relationships.
+▶️ How to Run
 
-It includes:
-- Distribution analysis of test preparation
-- Study time vs performance analysis
-- Absence impact analysis
-- Correlation heatmap
-- Pairplot for multi-variable relationships
+Install dependencies:
 
-These insights form the foundation for clustering and recommendation logic.
+pip install pandas numpy scikit-learn plotly streamlit openpyxl
 
---------------------------------------------------
+Run dashboard:
 
-📊 Dashboard Features
+python -m streamlit run dashboard.py
 
-An interactive dashboard was built using Streamlit to visualize and explore student data in real-time.
+Open EDA notebook:
 
-Key Features:
-- Performance-based filtering (Low, Average, High)
-- Filters for gender, course, score range, and absences
-- Student search by ID
-- Dynamic charts and visualizations
-- Correlation heatmap
-- Identification of top-performing and at-risk students
-- Downloadable dataset
+jupyter notebook eda.ipynb
 
---------------------------------------------------
+💡 Key Insights
 
-▶️ How to Run the Project
+Student performance is influenced by multiple factors such as study time, attendance, and consistency.
 
-1. Install required libraries:
+Study time shows a positive correlation with performance, while absences impact consistency rather than directly affecting scores.
 
-   pip install pandas matplotlib seaborn scikit-learn streamlit openpyxl
+The “Average (At Risk)” group is the most critical segment, as these students have potential but lack consistency.
 
-2. Run the dashboard:
+🤖 AI-Based Approach
 
-   python -m streamlit run dashboard.py
+The system integrates clustering, rule-based logic, and data visualization to create a complete decision-support system.
 
-3. Open EDA notebook:
-
-   jupyter notebook eda.ipynb
-
-4. (Optional) Run script:
-
-   python learning_navigator.py
-
---------------------------------------------------
-
-📊 Output
-
-The system provides:
-
-- Student segmentation (Low Performer, Average, High Performer)
-- Skill gap analysis
-- Personalized learning paths
-- Career alignment recommendations
-- Action plans
-- Interactive dashboard visualization
-
---------------------------------------------------
-
-💡 Key Insight
-
-Student performance is multi-dimensional and influenced by study habits, attendance, and preparation.
-
-Consistency plays a more important role than raw scores, and the "Average (At Risk)" group represents the highest opportunity for improvement.
-
---------------------------------------------------
+Instead of only analyzing data, it generates actionable insights and recommendations that can help improve student outcomes.
 
 🎯 Conclusion
 
-This project demonstrates how AI-driven analysis combined with interactive visualization can transform raw educational data into actionable insights.
+This project demonstrates how AI and data analytics can be used to transform raw student data into meaningful insights.
 
-The integration of EDA, clustering, personalization, and dashboard systems makes the solution scalable, practical, and suitable for real-world applications.
-
---------------------------------------------------
+By combining machine learning, visualization, and recommendation logic, the system provides a scalable and practical solution for personalized learning and academic improvement.
